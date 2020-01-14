@@ -47,6 +47,10 @@ const Content = props => {
         <div className='d-flex mt-auto ml-auto'>
           <Pagination articlesPerPage={articlesPerPage} totalArticles={news.length} paginate={paginate} />
         </div>
+        <div style={{flexBasis: '100%', height: '0'}}></div>
+        <div className='d-flex mx-auto my-3'>
+          <a href="https://newsapi.org" className="small">Powered by News API</a>
+        </div>
       </div>
     </Fragment>
   );
